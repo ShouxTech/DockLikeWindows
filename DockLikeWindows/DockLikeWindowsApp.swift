@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import Cocoa
+
+//@main
+//struct DockLikeWindowsApp: App {
+//    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
 
 @main
-struct DockLikeWindowsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct DockLikeWindowsApp {
+    static func main() {
+        let delegate = AppDelegate()
+        NSApplication.shared.delegate = delegate
+        _ = NSApplicationMain(CommandLine.argc, CommandLine.unsafeArgv)
     }
 }

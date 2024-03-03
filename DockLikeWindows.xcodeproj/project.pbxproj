@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D81BBF622B93EC9C003B2E39 /* EasyWindowPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81BBF612B93EC9C003B2E39 /* EasyWindowPreview.swift */; };
+		D81BBF652B943E5F003B2E39 /* PrivateApis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81BBF642B943E5F003B2E39 /* PrivateApis.swift */; };
 		D8AB19A62B92A0E900A12102 /* DockLikeWindowsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB19A52B92A0E900A12102 /* DockLikeWindowsApp.swift */; };
-		D8AB19A82B92A0E900A12102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB19A72B92A0E900A12102 /* ContentView.swift */; };
 		D8AB19AA2B92A0EA00A12102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AB19A92B92A0EA00A12102 /* Assets.xcassets */; };
 		D8AB19AD2B92A0EA00A12102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AB19AC2B92A0EA00A12102 /* Preview Assets.xcassets */; };
+		D8AB19BA2B92B2ED00A12102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB19B92B92B2ED00A12102 /* AppDelegate.swift */; };
+		D8AB19BC2B92DCE300A12102 /* AXUIElementHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB19BB2B92DCE300A12102 /* AXUIElementHelpers.swift */; };
+		D8F5AD822B9500130097C625 /* Bridging-Header-Impl.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F5AD812B9500130097C625 /* Bridging-Header-Impl.m */; };
+		D8FB9ECD2B93B666001604BC /* EasyWindowHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB9ECC2B93B666001604BC /* EasyWindowHide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D81BBF612B93EC9C003B2E39 /* EasyWindowPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyWindowPreview.swift; sourceTree = "<group>"; };
+		D81BBF632B9422CF003B2E39 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		D81BBF642B943E5F003B2E39 /* PrivateApis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateApis.swift; sourceTree = "<group>"; };
 		D8AB19A22B92A0E900A12102 /* DockLikeWindows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DockLikeWindows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8AB19A52B92A0E900A12102 /* DockLikeWindowsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockLikeWindowsApp.swift; sourceTree = "<group>"; };
-		D8AB19A72B92A0E900A12102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8AB19A92B92A0EA00A12102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8AB19AC2B92A0EA00A12102 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8AB19AE2B92A0EA00A12102 /* DockLikeWindows.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DockLikeWindows.entitlements; sourceTree = "<group>"; };
+		D8AB19B82B92B1B800A12102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D8AB19B92B92B2ED00A12102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8AB19BB2B92DCE300A12102 /* AXUIElementHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXUIElementHelpers.swift; sourceTree = "<group>"; };
+		D8F5AD812B9500130097C625 /* Bridging-Header-Impl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header-Impl.m"; sourceTree = "<group>"; };
+		D8FB9ECC2B93B666001604BC /* EasyWindowHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyWindowHide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +64,15 @@
 		D8AB19A42B92A0E900A12102 /* DockLikeWindows */ = {
 			isa = PBXGroup;
 			children = (
+				D8F5AD832B9504280097C625 /* Helpers */,
+				D8AB19B82B92B1B800A12102 /* Info.plist */,
 				D8AB19A52B92A0E900A12102 /* DockLikeWindowsApp.swift */,
-				D8AB19A72B92A0E900A12102 /* ContentView.swift */,
 				D8AB19A92B92A0EA00A12102 /* Assets.xcassets */,
 				D8AB19AE2B92A0EA00A12102 /* DockLikeWindows.entitlements */,
 				D8AB19AB2B92A0EA00A12102 /* Preview Content */,
+				D8AB19B92B92B2ED00A12102 /* AppDelegate.swift */,
+				D8FB9ECC2B93B666001604BC /* EasyWindowHide.swift */,
+				D81BBF612B93EC9C003B2E39 /* EasyWindowPreview.swift */,
 			);
 			path = DockLikeWindows;
 			sourceTree = "<group>";
@@ -67,6 +83,17 @@
 				D8AB19AC2B92A0EA00A12102 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8F5AD832B9504280097C625 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB19BB2B92DCE300A12102 /* AXUIElementHelpers.swift */,
+				D81BBF642B943E5F003B2E39 /* PrivateApis.swift */,
+				D81BBF632B9422CF003B2E39 /* Bridging-Header.h */,
+				D8F5AD812B9500130097C625 /* Bridging-Header-Impl.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +128,7 @@
 				TargetAttributes = {
 					D8AB19A12B92A0E900A12102 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -139,8 +167,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8AB19A82B92A0E900A12102 /* ContentView.swift in Sources */,
+				D8AB19BA2B92B2ED00A12102 /* AppDelegate.swift in Sources */,
+				D81BBF652B943E5F003B2E39 /* PrivateApis.swift in Sources */,
+				D8F5AD822B9500130097C625 /* Bridging-Header-Impl.m in Sources */,
+				D81BBF622B93EC9C003B2E39 /* EasyWindowPreview.swift in Sources */,
 				D8AB19A62B92A0E900A12102 /* DockLikeWindowsApp.swift in Sources */,
+				D8AB19BC2B92DCE300A12102 /* AXUIElementHelpers.swift in Sources */,
+				D8FB9ECD2B93B666001604BC /* EasyWindowHide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +239,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DockLikeWindows/Helpers/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -262,6 +296,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "DockLikeWindows/Helpers/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -270,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DockLikeWindows/DockLikeWindows.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -279,6 +315,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DockLikeWindows/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +326,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.crishoux.DockLikeWindows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DockLikeWindows/Helpers/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -297,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DockLikeWindows/DockLikeWindows.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -306,6 +347,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DockLikeWindows/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.crishoux.DockLikeWindows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DockLikeWindows/Helpers/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
