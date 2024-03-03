@@ -115,6 +115,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     return nil
                 }
                 
+                let isFinder = app.bundleIdentifier == "com.apple.finder" // Finder causes issues with EasyWindowHide.
+                if isFinder { return Unmanaged.passUnretained(event) }
+
                 if EasyWindowHide.instance.onDockIconClick(app: app) {
                     return nil
                 }

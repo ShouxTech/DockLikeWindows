@@ -218,8 +218,11 @@ class EasyWindowPreview {
     func onDockIconClick(app: NSRunningApplication, dockIconRect: CGRect) -> Bool {
         let appElement = AXUIElementCreateApplication(app.processIdentifier)
         
+        let isFinder = app.bundleIdentifier == "com.apple.finder"
+        let minimumWindowsForPreview = isFinder ? 3 : 2
+        
         guard let windows = AXUIElementHelpers.getElementAttribute(appElement, kAXWindowsAttribute) as? [AXUIElement] else { return false }
-        guard windows.count >= 2 else { return false }
+        guard windows.count >= minimumWindowsForPreview else { return false }
         
         let sortedWindows = windows.filter { return getWindowID($0) != nil }
             .sorted { getWindowID($0)! < getWindowID($1)! } // Prevent preview order changing.
