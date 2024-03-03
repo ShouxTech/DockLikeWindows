@@ -44,6 +44,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     static var updateDockIconsTimer: Timer?
     static var lastDockWidth: CGFloat = 0
     
+    static var menuButton: MenuButton?
+    
     static func getRunningApp(path: String) -> NSRunningApplication? {
         return NSWorkspace.shared.runningApplications.first { app in
             return app.bundleURL?.path == path
@@ -121,6 +123,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return Unmanaged.passUnretained(event)
         })
         clickListener.startListening()
+        
+        AppDelegate.menuButton = MenuButton()
         
         print("DockLikeWindows loaded.")
     }

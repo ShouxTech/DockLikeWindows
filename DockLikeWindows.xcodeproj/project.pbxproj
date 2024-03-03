@@ -14,6 +14,7 @@
 		D8AB19AD2B92A0EA00A12102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8AB19AC2B92A0EA00A12102 /* Preview Assets.xcassets */; };
 		D8AB19BA2B92B2ED00A12102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB19B92B92B2ED00A12102 /* AppDelegate.swift */; };
 		D8AB19BC2B92DCE300A12102 /* AXUIElementHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB19BB2B92DCE300A12102 /* AXUIElementHelpers.swift */; };
+		D8CF447F2B95116400B8FACF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CF447E2B95116400B8FACF /* MenuButton.swift */; };
 		D8F5AD822B9500130097C625 /* Bridging-Header-Impl.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F5AD812B9500130097C625 /* Bridging-Header-Impl.m */; };
 		D8FB9ECD2B93B666001604BC /* EasyWindowHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FB9ECC2B93B666001604BC /* EasyWindowHide.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		D8AB19B82B92B1B800A12102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D8AB19B92B92B2ED00A12102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8AB19BB2B92DCE300A12102 /* AXUIElementHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXUIElementHelpers.swift; sourceTree = "<group>"; };
+		D8CF447E2B95116400B8FACF /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		D8F5AD812B9500130097C625 /* Bridging-Header-Impl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bridging-Header-Impl.m"; sourceTree = "<group>"; };
 		D8FB9ECC2B93B666001604BC /* EasyWindowHide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyWindowHide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				D8AB19B92B92B2ED00A12102 /* AppDelegate.swift */,
 				D8FB9ECC2B93B666001604BC /* EasyWindowHide.swift */,
 				D81BBF612B93EC9C003B2E39 /* EasyWindowPreview.swift */,
+				D8CF447E2B95116400B8FACF /* MenuButton.swift */,
 			);
 			path = DockLikeWindows;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				D81BBF652B943E5F003B2E39 /* PrivateApis.swift in Sources */,
 				D8F5AD822B9500130097C625 /* Bridging-Header-Impl.m in Sources */,
 				D81BBF622B93EC9C003B2E39 /* EasyWindowPreview.swift in Sources */,
+				D8CF447F2B95116400B8FACF /* MenuButton.swift in Sources */,
 				D8AB19A62B92A0E900A12102 /* DockLikeWindowsApp.swift in Sources */,
 				D8AB19BC2B92DCE300A12102 /* AXUIElementHelpers.swift in Sources */,
 				D8FB9ECD2B93B666001604BC /* EasyWindowHide.swift in Sources */,
