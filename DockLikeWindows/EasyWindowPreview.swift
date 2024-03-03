@@ -67,6 +67,7 @@ class OverlayWindow: NSWindow {
         self.orderFront(nil)
     }
     
+    // Prevent window getting focused when preview is clicked.
     override func _isNonactivatingPanel() -> Bool {
         return true
     }
