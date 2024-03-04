@@ -100,6 +100,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
 
         let clickListener = ClickListener(callback: { proxy, type, event, refcon in
+            let flags = event.flags.rawValue
+            let isCmdPressed = flags & CGEventFlags.maskCommand.rawValue != 0
+            let isCtrlPressed = flags & CGEventFlags.maskControl.rawValue != 0
+            let isAltPressed = flags & CGEventFlags.maskAlternate.rawValue != 0
+            
+            if isCmdPressed || isCtrlPressed || isAltPressed { return Unmanaged.passUnretained(event) }
+            
             for (title, dockIcon) in AppDelegate.dockIcons {
                 guard let dockIcon = dockIcon as? [String: Any],
                       let path = dockIcon["path"] as? String,
